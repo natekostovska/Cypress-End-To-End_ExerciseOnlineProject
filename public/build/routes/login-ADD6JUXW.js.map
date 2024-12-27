@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/routes/login.jsx"],
-  "sourcesContent": ["import { json } from '@remix-run/node';\r\n\r\nimport Auth from '../components/Auth';\r\nimport { login } from '../data/auth.server';\r\nimport { isValidEmail, isValidPassword } from '../util/validation.server';\r\n\r\nfunction LoginRoute() {\r\n  return <Auth mode=\"login\" />;\r\n}\r\n\r\nexport default LoginRoute;\r\n\r\nexport async function action({ request }) {\r\n  const formData = await request.formData();\r\n  const credentials = Object.fromEntries(formData);\r\n\r\n  if (\r\n    !isValidEmail(credentials.email) ||\r\n    !isValidPassword(credentials.password)\r\n  ) {\r\n    return json({ message: 'Invalid credentials entered.' }, { status: 400 });\r\n  }\r\n\r\n  return login(credentials);\r\n}\r\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;AAAA,kBAAqB;AAGrB,kBAAsB;AACtB,wBAA8C;AAGrC;AADT,SAAS,aAAa;AACpB,SAAO,mDAAC,gBAAK,MAAK,WAAX;AAAA;AAAA;AAAA;AAAA,SAAmB;AAC5B;AAEA,IAAO,gBAAQ;",
-  "names": []
-}

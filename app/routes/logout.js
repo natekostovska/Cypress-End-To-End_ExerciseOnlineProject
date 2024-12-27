@@ -1,4 +1,4 @@
-import { destroyUserSession } from '~/data/auth.server';
+import { destroyUserSession } from '../data/auth.server';
 import { BadRequestErrorResponse } from '../util/errors';
 
 export function action({ request }) {

@@ -1,7 +1,7 @@
 {
   "private": true,
   "sideEffects": false,
-  "scripts": {
+ "scripts": {
     "init": "npm install && dotenv -e .env npx prisma db push && node prisma/seed.js",
     "dev": "vite",
     "build": "vite build",

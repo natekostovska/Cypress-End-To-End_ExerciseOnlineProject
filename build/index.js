@@ -365,10 +365,10 @@ async function login({ email, password }) {
 }
 
 // app/styles/main.css
-var main_default = "/build/_assets/main-5TQMAH3L.css";
+var main_default = "/build/_assets/main-WURZUY6O.css";
 
 // app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-R2RCMB3Q.css";
+var tailwind_default = "/build/_assets/tailwind-FKLXY35Y.css";
 
 // app/root.jsx
 var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), meta = () => ({
@@ -616,204 +616,12 @@ async function loader3({ request }) {
   return await requireUserSession(request), prisma.takeaway.findMany();
 }
 
-// app/routes/takeaways/new.jsx
-var new_exports = {};
-__export(new_exports, {
-  action: () => action2,
-  default: () => new_default,
-  loader: () => loader4
-});
-var import_node4 = require("@remix-run/node"), import_react6 = require("@remix-run/react");
-
-// app/components/Modal.jsx
-var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
-function Modal({ onClose, children }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_jsx_dev_runtime7.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
-      "div",
-      {
-        className: "fixed top-0 left-0 h-screen w-screen bg-slate-900 opacity-80",
-        onClick: onClose
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/components/Modal.jsx",
-        lineNumber: 4,
-        columnNumber: 7
-      },
-      this
-    ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
-      "dialog",
-      {
-        open: !0,
-        className: "m-0 fixed top-10 left-[50%] -translate-x-1/2 bg-slate-300 rounded-md p-4 w-96",
-        children
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/components/Modal.jsx",
-        lineNumber: 8,
-        columnNumber: 7
-      },
-      this
-    )
-  ] }, void 0, !0, {
-    fileName: "app/components/Modal.jsx",
-    lineNumber: 3,
-    columnNumber: 5
-  }, this);
-}
-var Modal_default = Modal;
-
-// app/routes/takeaways/new.jsx
-var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
-function NewTakewayRoute() {
-  let navigate = (0, import_react6.useNavigate)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Modal_default, { onClose: () => navigate("..", { relative: "path" }), children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react6.Form, { method: "post", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-        "label",
-        {
-          htmlFor: "title",
-          className: "block mb-1 font-semibold text-slate-600",
-          children: "Title"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/takeaways/new.jsx",
-          lineNumber: 15,
-          columnNumber: 11
-        },
-        this
-      ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-        "input",
-        {
-          type: "text",
-          id: "title",
-          name: "title",
-          required: !0,
-          maxLength: 200,
-          className: "px-2 py-1 bg-slate-200 w-full",
-          "data-cy": "title"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/takeaways/new.jsx",
-          lineNumber: 21,
-          columnNumber: 11
-        },
-        this
-      )
-    ] }, void 0, !0, {
-      fileName: "app/routes/takeaways/new.jsx",
-      lineNumber: 14,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-        "label",
-        {
-          htmlFor: "body",
-          className: "block mb-1 font-semibold text-slate-600",
-          children: "Body"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/takeaways/new.jsx",
-          lineNumber: 32,
-          columnNumber: 11
-        },
-        this
-      ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-        "textarea",
-        {
-          id: "body",
-          name: "body",
-          required: !0,
-          rows: 5,
-          className: "px-2 py-1 bg-slate-200 w-full",
-          "data-cy": "body"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/takeaways/new.jsx",
-          lineNumber: 38,
-          columnNumber: 11
-        },
-        this
-      )
-    ] }, void 0, !0, {
-      fileName: "app/routes/takeaways/new.jsx",
-      lineNumber: 31,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "flex gap-4 justify-end items-center", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react6.Link, { to: "..", className: "text-slate-600 hover:text-slate-500", children: "Cancel" }, void 0, !1, {
-        fileName: "app/routes/takeaways/new.jsx",
-        lineNumber: 48,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-        "button",
-        {
-          type: "submit",
-          className: "bg-blue-500 text-white px-4 py-1 rounded-sm hover:bg-blue-400",
-          "data-cy": "create-takeaway",
-          children: "Create"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/takeaways/new.jsx",
-          lineNumber: 51,
-          columnNumber: 11
-        },
-        this
-      )
-    ] }, void 0, !0, {
-      fileName: "app/routes/takeaways/new.jsx",
-      lineNumber: 47,
-      columnNumber: 9
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/routes/takeaways/new.jsx",
-    lineNumber: 13,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/takeaways/new.jsx",
-    lineNumber: 12,
-    columnNumber: 5
-  }, this);
-}
-var new_default = NewTakewayRoute;
-function loader4({ request }) {
-  return requireUserSession(request);
-}
-async function action2({ request }) {
-  let fd = await request.formData(), title = fd.get("title"), body = fd.get("body");
-  return !title || !body ? (0, import_node4.json)({ message: "Title and body are required." }, { status: 400 }) : (await prisma.takeaway.create({
-    data: {
-      title,
-      body
-    }
-  }), (0, import_node4.redirect)("/takeaways"));
-}
-
 // app/routes/logout.js
 var logout_exports = {};
 __export(logout_exports, {
-  action: () => action3
+  action: () => action2
 });
-function action3({ request }) {
+function action2({ request }) {
   if (request.method !== "POST")
     throw new BadRequestErrorResponse("HTTP method not allowed.");
   return destroyUserSession(request);
@@ -822,24 +630,24 @@ function action3({ request }) {
 // app/routes/signup.jsx
 var signup_exports = {};
 __export(signup_exports, {
-  action: () => action4,
+  action: () => action3,
   default: () => signup_default
 });
-var import_node5 = require("@remix-run/node");
+var import_node4 = require("@remix-run/node");
 
 // app/components/Auth.jsx
-var import_react7 = require("@remix-run/react"), import_jsx_dev_runtime9 = require("react/jsx-dev-runtime");
+var import_react6 = require("@remix-run/react"), import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
 function Auth({ mode }) {
-  let validationData = (0, import_react7.useActionData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
-    import_react7.Form,
+  let validationData = (0, import_react6.useActionData)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
+    import_react6.Form,
     {
       method: "post",
       action: `/${mode}`,
       className: "bg-slate-800 px-4 rounded-md my-4 max-w-lg mx-auto p-4",
       children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
             "label",
             {
               htmlFor: "email",
@@ -855,7 +663,7 @@ function Auth({ mode }) {
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
             "input",
             {
               type: "email",
@@ -878,8 +686,8 @@ function Auth({ mode }) {
           lineNumber: 12,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
             "label",
             {
               htmlFor: "password",
@@ -895,7 +703,7 @@ function Auth({ mode }) {
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
             "input",
             {
               type: "password",
@@ -920,14 +728,14 @@ function Auth({ mode }) {
           lineNumber: 27,
           columnNumber: 7
         }, this),
-        validationData && /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { className: "text-pink-300", children: validationData.statusText }, void 0, !1, {
+        validationData && /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { className: "text-pink-300", children: validationData.statusText }, void 0, !1, {
           fileName: "app/components/Auth.jsx",
           lineNumber: 44,
           columnNumber: 26
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { className: "flex justify-end mt-2 gap-4 items-center", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
-            import_react7.Link,
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { className: "flex justify-end mt-2 gap-4 items-center", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
+            import_react6.Link,
             {
               to: mode === "login" ? "/signup" : "/login",
               className: "text-slate-400 hover:text-slate-500",
@@ -942,7 +750,7 @@ function Auth({ mode }) {
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
             "button",
             {
               type: "submit",
@@ -979,43 +787,43 @@ function Auth({ mode }) {
 var Auth_default = Auth;
 
 // app/routes/signup.jsx
-var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
 function SignupRoute() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(Auth_default, { mode: "signup" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Auth_default, { mode: "signup" }, void 0, !1, {
     fileName: "app/routes/signup.jsx",
     lineNumber: 8,
     columnNumber: 10
   }, this);
 }
 var signup_default = SignupRoute;
-async function action4({ request }) {
+async function action3({ request }) {
   let formData = await request.formData(), credentials = Object.fromEntries(formData);
-  return !isValidEmail(credentials.email) || !isValidPassword(credentials.password) ? (0, import_node5.json)({ message: "Invalid credentials entered." }, { status: 400 }) : signup(credentials);
+  return !isValidEmail(credentials.email) || !isValidPassword(credentials.password) ? (0, import_node4.json)({ message: "Invalid credentials entered." }, { status: 400 }) : signup(credentials);
 }
 
 // app/routes/index.jsx
 var routes_exports = {};
 __export(routes_exports, {
   default: () => Index,
-  loader: () => loader5
+  loader: () => loader4
 });
-var import_react8 = require("@remix-run/react");
-var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime");
+var import_react7 = require("@remix-run/react");
+var import_jsx_dev_runtime9 = require("react/jsx-dev-runtime");
 function Index() {
-  let takeways = (0, import_react8.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_jsx_dev_runtime11.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("section", { className: "text-center max-w-5xl mx-auto my-4", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("h1", { className: "font-bold text-2xl my-4", children: "Learn Cypress" }, void 0, !1, {
+  let takeways = (0, import_react7.useLoaderData)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_jsx_dev_runtime9.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("section", { className: "text-center max-w-5xl mx-auto my-4", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("h1", { className: "font-bold text-2xl my-4", children: "Learn Cypress" }, void 0, !1, {
         fileName: "app/routes/index.jsx",
         lineNumber: 11,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { children: "Cypress is an amazing end-to-end testing software and framework." }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { children: "Cypress is an amazing end-to-end testing software and framework." }, void 0, !1, {
         fileName: "app/routes/index.jsx",
         lineNumber: 12,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { children: "Manage your key Cypress takeaways and concepts with our learning app." }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { children: "Manage your key Cypress takeaways and concepts with our learning app." }, void 0, !1, {
         fileName: "app/routes/index.jsx",
         lineNumber: 13,
         columnNumber: 9
@@ -1025,7 +833,7 @@ function Index() {
       lineNumber: 10,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("section", { className: "text-center max-w-5xl mx-auto my-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(Takeaways_default, { items: takeways }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("section", { className: "text-center max-w-5xl mx-auto my-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(Takeaways_default, { items: takeways }, void 0, !1, {
       fileName: "app/routes/index.jsx",
       lineNumber: 18,
       columnNumber: 9
@@ -1034,7 +842,7 @@ function Index() {
       lineNumber: 17,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("section", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_react8.Link, { to: "/takeaways/new", className: "bg-blue-700 text-blue-50 rounded-sm px-8 py-4 text-lg hover:bg-blue-600", children: "+ Add a new takeaway" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("section", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_react7.Link, { to: "/takeaways/new", className: "bg-blue-700 text-blue-50 rounded-sm px-8 py-4 text-lg hover:bg-blue-600", children: "+ Add a new takeaway" }, void 0, !1, {
       fileName: "app/routes/index.jsx",
       lineNumber: 22,
       columnNumber: 11
@@ -1053,36 +861,36 @@ function Index() {
     columnNumber: 5
   }, this);
 }
-function loader5() {
+function loader4() {
   return prisma.takeaway.findMany({ take: 2 });
 }
 
 // app/routes/login.jsx
 var login_exports = {};
 __export(login_exports, {
-  action: () => action5,
+  action: () => action4,
   default: () => login_default
 });
-var import_node6 = require("@remix-run/node");
-var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime");
+var import_node5 = require("@remix-run/node");
+var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime");
 function LoginRoute() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(Auth_default, { mode: "login" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(Auth_default, { mode: "login" }, void 0, !1, {
     fileName: "app/routes/login.jsx",
     lineNumber: 8,
     columnNumber: 10
   }, this);
 }
 var login_default = LoginRoute;
-async function action5({ request }) {
+async function action4({ request }) {
   let formData = await request.formData(), credentials = Object.fromEntries(formData);
-  return !isValidEmail(credentials.email) || !isValidPassword(credentials.password) ? (0, import_node6.json)({ message: "Invalid credentials entered." }, { status: 400 }) : login(credentials);
+  return !isValidEmail(credentials.email) || !isValidPassword(credentials.password) ? (0, import_node5.json)({ message: "Invalid credentials entered." }, { status: 400 }) : login(credentials);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-BWPAIB2L.js", imports: ["/build/_shared/chunk-THAGB5S3.js", "/build/_shared/chunk-IU43IUTG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-W4XD2PFG.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-TZ3I5OOY.js", imports: ["/build/_shared/chunk-YO3HTD47.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-ADD6JUXW.js", imports: ["/build/_shared/chunk-2BCBQEVJ.js", "/build/_shared/chunk-TCXHKMVV.js", "/build/_shared/chunk-3K2JK6MY.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-ZMFQ6MVI.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/newsletter": { id: "routes/newsletter", parentId: "root", path: "newsletter", index: void 0, caseSensitive: void 0, module: "/build/routes/newsletter-KBVAXRSR.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup": { id: "routes/signup", parentId: "root", path: "signup", index: void 0, caseSensitive: void 0, module: "/build/routes/signup-P4EMV3KU.js", imports: ["/build/_shared/chunk-2BCBQEVJ.js", "/build/_shared/chunk-TCXHKMVV.js", "/build/_shared/chunk-3K2JK6MY.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/takeaways": { id: "routes/takeaways", parentId: "root", path: "takeaways", index: void 0, caseSensitive: void 0, module: "/build/routes/takeaways-2OBWYXAF.js", imports: ["/build/_shared/chunk-TCXHKMVV.js", "/build/_shared/chunk-YO3HTD47.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/takeaways/new": { id: "routes/takeaways/new", parentId: "routes/takeaways", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/takeaways/new-FUWOUKEZ.js", imports: ["/build/_shared/chunk-3K2JK6MY.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "293482c7", hmr: void 0, url: "/build/manifest-293482C7.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-M7I46A26.js", imports: ["/build/_shared/chunk-O4BRYNJ4.js", "/build/_shared/chunk-U4FRFQSK.js", "/build/_shared/chunk-FH5TKOU3.js", "/build/_shared/chunk-2VGKGBPM.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XGOTYLZ5.js", "/build/_shared/chunk-7M6SC7J5.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-R5ITYBDG.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: "index", index: void 0, caseSensitive: void 0, module: "/build/routes/index-AEU36PL6.js", imports: ["/build/_shared/chunk-JVQR4OWB.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-RSJT4EAO.js", imports: ["/build/_shared/chunk-TBT4GSNO.js", "/build/_shared/chunk-NL2O7T4N.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-MVG2CT2K.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/newsletter": { id: "routes/newsletter", parentId: "root", path: "newsletter", index: void 0, caseSensitive: void 0, module: "/build/routes/newsletter-EAJOEBGC.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup": { id: "routes/signup", parentId: "root", path: "signup", index: void 0, caseSensitive: void 0, module: "/build/routes/signup-I43VCDSR.js", imports: ["/build/_shared/chunk-TBT4GSNO.js", "/build/_shared/chunk-NL2O7T4N.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/takeaways": { id: "routes/takeaways", parentId: "root", path: "takeaways", index: void 0, caseSensitive: void 0, module: "/build/routes/takeaways-EGW4ESHR.js", imports: ["/build/_shared/chunk-JVQR4OWB.js", "/build/_shared/chunk-NL2O7T4N.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "6b2229dd", hmr: { runtime: "/build/_shared\\chunk-2VGKGBPM.js", timestamp: 1735334641725 }, url: "/build/manifest-6B2229DD.js" };
 
 // server-entry-module:@remix-run/dev/server-build
-var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !1, v2_headers: !1, v2_meta: !1, v2_normalizeFormMethod: !1, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
+var assetsBuildDirectory = "public\\build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !1, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
   root: {
     id: "root",
     parentId: void 0,
@@ -1107,14 +915,6 @@ var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_post
     caseSensitive: void 0,
     module: takeaways_exports
   },
-  "routes/takeaways/new": {
-    id: "routes/takeaways/new",
-    parentId: "routes/takeaways",
-    path: "new",
-    index: void 0,
-    caseSensitive: void 0,
-    module: new_exports
-  },
   "routes/logout": {
     id: "routes/logout",
     parentId: "root",
@@ -1134,8 +934,8 @@ var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_post
   "routes/index": {
     id: "routes/index",
     parentId: "root",
-    path: void 0,
-    index: !0,
+    path: "index",
+    index: void 0,
     caseSensitive: void 0,
     module: routes_exports
   },
