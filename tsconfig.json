@@ -1,5 +1,5 @@
 {
-  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "cypress.config.js", "Cypress-End-To-End_ExerciseOnlineProject/cypress/e2e/newsletter.cy.js"],
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "cypress.config.js", "cypress/e2e/newsletter.cy.js"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
     "isolatedModules": true,
@@ -13,7 +13,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["Cypress-End-To-End_ExerciseOnlineProject/app/*"]
+      "~/*": ["app/*"]
     },
 
     // Remix takes care of building everything in `remix build`.
