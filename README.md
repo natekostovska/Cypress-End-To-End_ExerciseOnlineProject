@@ -6,6 +6,8 @@ For running all tests 3 terminals should be open at same time
 Terminal 1:
 Command for DB tests
 
+npm install concurrently --save-dev
+
 npm run dev:full
 
 page:
