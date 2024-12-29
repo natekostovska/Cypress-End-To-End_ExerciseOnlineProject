@@ -27,4 +27,4 @@ http://localhost:5173/
 Terminal 3:
 command for running all tests in cypress
 
-npm cypress open
+npx cypress open
