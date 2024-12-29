@@ -1,8 +1,12 @@
 # Cypress-End-To-End_ExerciseOnlineProject
 
 ---------------------------------------------------------------------------------------------
-For running all tests 3 terminals should be open at same time
+For running all tests 2 terminals should be open at same time
 
+- To run only DB tests Terminal 1 and 3
+- To run only Tasks tests Terminal 2 and 3
+- To Terminate batch job for Terminal 1 or Terminal 2 -> CTRL+C -> Y
+  
 --------------------------------------------------------------
 Terminal 1:
 Command for DB tests
